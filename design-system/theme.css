@@ -1,0 +1,58 @@
+/* Te Kete Toi — theme.css
+   Palette from whenua and moana. Names in te reo. Works as a styleseed skin. */
+
+:root {
+  /* Primary accent — kōkōwai (red ochre of kōwhaiwhai) */
+  --brand: #A63A2A;
+  --brand-strong: #8C2F22;
+  --brand-soft: #F3E4E0;
+
+  /* Highlight — pīngao (golden sedge; use sparingly) */
+  --accent-pingao: #C99A3D;
+
+  /* Depth — moana / kahurangi */
+  --accent-moana: #1F4E5F;
+
+  /* Neutrals — whenua and bone */
+  --ink: #2B2420;            /* paru-dark, never #000 */
+  --ink-2: #4A403A;
+  --ink-3: #6E635C;
+  --ink-muted: #8C817A;
+  --surface: #FFFFFF;
+  --surface-2: #FAF7F3;      /* bone / undyed harakeke */
+  --surface-3: #F1EBE3;
+  --line: #E5DDD2;
+
+  /* Greens — harakeke */
+  --ok: #4F6B4A;
+  --warn: #B07C2E;
+  --error: #8C2F22;
+
+  /* Type */
+  --font-sans: "Source Sans 3", "Noto Sans", "Segoe UI", system-ui, sans-serif; /* macron-complete */
+  --font-display: "Source Serif 4", "Noto Serif", Georgia, serif;
+
+  /* Rhythm */
+  --radius: 10px;
+  --shadow: 0 1px 2px rgb(43 36 32 / 0.05), 0 4px 12px rgb(43 36 32 / 0.06);
+  --space-pattern-band: 4rem;  /* breathing room around pattern zones */
+}
+
+[data-theme="pouri"] { /* dark — te pō */
+  --ink: #F1EBE3;
+  --ink-2: #D8CFC4;
+  --ink-3: #B3A89D;
+  --ink-muted: #8C817A;
+  --surface: #201B18;
+  --surface-2: #2B2420;
+  --surface-3: #362E29;
+  --line: #453B34;
+  --brand: #C25A48;
+  --brand-soft: #3A2723;
+}
+
+/* Te reo content — ensure correct pronunciation + macron-safe spacing */
+[lang="mi"] { letter-spacing: 0; font-feature-settings: "kern" 1; }
+
+/* Pattern band: patterns are content — give them room */
+.pattern-band { padding-block: var(--space-pattern-band); }
